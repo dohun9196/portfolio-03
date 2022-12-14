@@ -45,7 +45,7 @@
         <!-- { main -->
         <main>
             <!-- { mainVisual -->
-            <section class="mainVisual">
+            <section id="mainVisual" class="mainVisual">
 
                 <div class="main_slide">
                     <figure class="slide01">
@@ -124,7 +124,6 @@
                         </div>
                     </figure>
 
-
                     <div class="vis_inner">
                         <div class="visTxt">
                             <h2>CORE VALUE</h2>
@@ -193,9 +192,12 @@
                                         있습니다.<br />
                                     </p>
                                 </figure>
-
                             </div>
                         </div>
+
+                        <!-- <figure class="vision_bottom">
+                            <img src="./img/footer_bg.jpg" alt="">
+                        </figure> -->
                     </div>
             </section>
             <!-- vision_unit } -->
@@ -203,15 +205,17 @@
 
             <!-- { mainService -->
             <section class="mainService">
-                <h3>고객을 위한 최고의 서비스를 제공합니다.</h3>
-                <ul>
-                    <li><a href="#!">고객의 소리</a></li>
-                    <li><a href="#!">자주묻는 질문</a></li>
-                    <li><a href="#!">홍보센터</a></li>
-                    <li><a href="#!">현장/사업소 안내</a></li>
-                    <li><a href="#!">인재채용</a></li>
-                    <li><a href="#!">오시는 길</a></li>
-                </ul>
+                <h2>고객을 위한 최고의 서비스를 제공합니다.</h2>
+                <div class="ser_inner">
+                    <ul>
+                        <li><a href="#!">고객의 소리</a></li>
+                        <li><a href="#!">자주묻는 질문</a></li>
+                        <li><a href="#!">홍보센터</a></li>
+                        <li><a href="#!">현장/사업소 안내</a></li>
+                        <li><a href="#!">인재채용</a></li>
+                        <li><a href="#!">오시는 길</a></li>
+                    </ul>
+                </div>
             </section>
             <!-- mainService } -->
 
@@ -220,7 +224,7 @@
 
         <!-- { footer -->
         <footer class="footer">
-            <div class="footer_top">
+            <div class="footer_content">
                 <ul>
                     <li><a href="#!">개인정보처리방침</a></li>
                     <li><a href="#!">법적고지</a></li>
@@ -229,9 +233,22 @@
                     <li><a href="#!">고객센터</a></li>
                     <li><a href="#!">사이버신문고</a></li>
                 </ul>
+                <figure class="footer_bg">
+                    <img src="./img/footer_logo.png" alt="">
+                    <address>
+                        <p>서울특별시 강남구 테헤란로 137 코레이트타워</p>
+                        <p>COPYRIGHT © 2018 DONGBU CORPORATION., ALL RIGHTS RESERVED.</p>
+                    </address>
+                </figure>
             </div>
-            <address>서울특별시 강남구 테헤란로 137 코레이트타워<br />
-                COPYRIGHT © 2018 DONGBU CORPORATION., ALL RIGHTS RESERVED.</address>
+
+            <div id="top_btn" class="top_btn">
+                <a href="#mainVisual">
+                    <figure>
+                        <img src="./img/go_top.png" alt="">
+                    </figure>
+                </a>
+            </div>
         </footer>
 
         <!-- footer } -->
