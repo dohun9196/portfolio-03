@@ -17,7 +17,7 @@
 <body>
     <div class="Wrap">
         <!-- { header -->
-        <header class="header">
+        <header id="header" class="header">
             <div class="inner">
                 <h1>
                     <a href="/">
@@ -26,14 +26,55 @@
                 </h1>
                 <nav class="gnb">
                     <ul>
-                        <li><a href="#!">회사소개</a></li>
-                        <li><a href="#!">사업소개</a></li>
-                        <li><a href="#!">투자정보</a></li>
-                        <li><a href="#!">지속가능경영</a></li>
-                        <li><a href="#!">홍보센터</a></li>
+                        <li><a href="#!">회사소개</a>
+                            <ul class="drop_menu">
+                                <li><a href="">CEO인사말</a></li>
+                                <li><a href="">비전</a></li>
+                                <li><a href="">연혁</a></li>
+                                <li><a href="">조직구성</a></li>
+                                <li><a href="">연구개발</a></li>
+                                <li><a href="">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">사업소개</a>
+                            <ul class="drop_menu">
+                                <li><a href="">사업소개</a></li>
+                                <li><a href="">토목</a></li>
+                                <li><a href="">건축</a></li>
+                                <li><a href="">주택</a></li>
+                                <li><a href="">플랜트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">투자정보</a>
+                            <ul class="drop_menu">
+                                <li><a href="">경영정보</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">전자공시</a></li>
+                                <li><a href="">회사공고</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">지속가능경영</a>
+                            <ul class="drop_menu">
+                                <li><a href="">품질경영</a></li>
+                                <li><a href="">환경경영</a></li>
+                                <li><a href="">윤리경영</a></li>
+                                <li><a href="">상생경영</a></li>
+                                <li><a href="">나눔경영</a></li>
+                                <li><a href="">인권경영</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#!">홍보센터</a>
+                            <ul class="drop_menu">
+                                <li><a href="">동부소식</a></li>
+                                <li><a href="">CI/BI소개</a></li>
+                                <li><a href="">수상실적</a></li>
+                                <li><a href="">홍보자료</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#!">인재채용</a></li>
                     </ul>
                 </nav>
+
                 <div class="site_link">
                     <a href="#!">센트레빌</a>
                     <a href="#!">동부건설채용</a>
@@ -45,7 +86,7 @@
         <!-- { main -->
         <main>
             <!-- { mainVisual -->
-            <section class="mainVisual">
+            <section id="mainVisual" class="mainVisual">
 
                 <div class="main_slide">
                     <figure class="slide01">
@@ -115,103 +156,98 @@
 
             <!-- { vision_unit -->
             <section class="vision_unit">
-                <div class="vision">
-                    <figure class="vision_title">
-                        <div class="vtitle_inner">
-                            <h2>VISION 2025</h2>
-                            <p>경영의 모든 면에서 지속적으로 최고의 경쟁력을 갖춘 기업으로 도약할 동부건설의 비전입니다.</p>
+                <div class="vis_inner">
+                    <div class="visTxt">
+                        <h2>VISION CORE VALUE</h2>
+                        <p>대한민국을 대표하는 지속가능 종합 건설기업</p>
+                    </div>
+                    <div class="vis_slide">
+                        <figure>
+                            <img src="./img/vision01.jpg" alt="">
+                            <h3>CREATIVE</h3>
+                            <p>새로운 도전을 두려워하지 않는정신과<br />
+                                창의적인 사고로 글로벌건설리더로 도약하겠습니다.
+                            </p>
+                        </figure>
+                        <figure>
+                            <img src="./img/vision02.jpg" alt="">
+                            <h3>PASSIONE</h3>
+                            <p>불굴의 의지와 열정으로 미래를 개척해 가며<br />
+                                공동의 가치를 창조하겠습니다.
+                            </p>
+                        </figure>
+                        <figure>
+                            <img src="./img/vision03.jpg" alt="">
+                            <h3>TRUST</h3>
+                            <p>서로 간의 신뢰를 이루며 고객과 사회에 좋은<br />
+                                영향력을 끼치는 정직한 기업이 되겠습니다.
+                            </p>
+                        </figure>
+                    </div>
 
+
+                    <div class="unit_inner">
+                        <div class="unitTxt">
+                            <h2>BUSINESS UNITS</h2>
+                            <p>동부건설은 더 나은 미래를 건설합니다.</p>
                         </div>
-                    </figure>
-
-
-                    <div class="vis_inner">
-                        <div class="visTxt">
-                            <h2>CORE VALUE</h2>
-                            <p>대한민국을 대표하는 지속가능 종합 건설기업</p>
-                        </div>
-                        <div class="vis_slide">
+                        <div class="unit_slide">
                             <figure>
-                                <img src="./img/vision01.jpg" alt="">
-                                <h3>CREATIVE</h3>
-                                <p>새로운 도전을 두려워하지 않는정신과<br />
-                                    창의적인 사고로 글로벌건설리더로 도약하겠습니다.
+                                <img src="./img/unit01.jpg" alt="">
+                                <h3>토목</h3>
+                                <p> 동부건설 토목사업부는 최고의 기술과<br />
+                                    최고의 품질로 세계 속의 기술 신대륙을<br />
+                                    건설하고 있습니다.
                                 </p>
                             </figure>
                             <figure>
-                                <img src="./img/vision02.jpg" alt="">
-                                <h3>PASSIONE</h3>
-                                <p>불굴의 의지와 열정으로 미래를 개척해 가며<br />
-                                    공동의 가치를 창조하겠습니다.
+                                <img src="./img/unit02.jpg" alt="">
+                                <h3>건축</h3>
+                                <p>동부건설은 최고의 시공력과<br />
+                                    뛰어난 설계감각을 바탕으로 대한민국의<br />
+                                    스카이라인을 바꾸는 일등주자가 되었습니다.<br />
                                 </p>
                             </figure>
                             <figure>
-                                <img src="./img/vision03.jpg" alt="">
-                                <h3>TRUST</h3>
-                                <p>서로 간의 신뢰를 이루며 고객과 사회에 좋은<br />
-                                    영향력을 끼치는 정직한 기업이 되겠습니다.
+                                <img src="./img/unit03.jpg" alt="">
+                                <h3>주택</h3>
+                                <p>동부건설은 첨단기술과 품질우선주의를<br />
+                                    바탕으로 시대를 대표하는 아름다운 주가공간<br />
+                                    창조를 위해 매진하고 있습니다.<br />
                                 </p>
                             </figure>
-                        </div>
-
-
-                        <div class="unit_inner">
-                            <div class="unitTxt">
-                                <h2>BUSINESS UNITS</h2>
-                                <p>동부건설은 더 나은 미래를 건설합니다.</p>
-                            </div>
-                            <div class="unit_slide">
-                                <figure>
-                                    <img src="./img/unit01.jpg" alt="">
-                                    <h3>토목</h3>
-                                    <p> 동부건설 토목사업부는 최고의 기술과<br />
-                                        최고의 품질로 세계 속의 기술 신대륙을<br />
-                                        건설하고 있습니다.
-                                    </p>
-                                </figure>
-                                <figure>
-                                    <img src="./img/unit02.jpg" alt="">
-                                    <h3>건축</h3>
-                                    <p>동부건설은 최고의 시공력과<br />
-                                        뛰어난 설계감각을 바탕으로 대한민국의<br />
-                                        스카이라인을 바꾸는 일등주자가 되었습니다.<br />
-                                    </p>
-                                </figure>
-                                <figure>
-                                    <img src="./img/unit03.jpg" alt="">
-                                    <h3>주택</h3>
-                                    <p>동부건설은 첨단기술과 품질우선주의를<br />
-                                        바탕으로 시대를 대표하는 아름다운 주가공간<br />
-                                        창조를 위해 매진하고 있습니다.<br />
-                                    </p>
-                                </figure>
-                                <figure>
-                                    <img src="./img/unit04.jpg" alt="">
-                                    <h3>플랜트</h3>
-                                    <p>동부건설은 환경보전을 기본 이념으로<br />
-                                        대단위 산업시설 공사를 성공적으로 수행하고<br />
-                                        있습니다.<br />
-                                    </p>
-                                </figure>
-
-                            </div>
+                            <figure>
+                                <img src="./img/unit04.jpg" alt="">
+                                <h3>플랜트</h3>
+                                <p>동부건설은 환경보전을 기본 이념으로<br />
+                                    대단위 산업시설 공사를 성공적으로 수행하고<br />
+                                    있습니다.<br />
+                                </p>
+                            </figure>
                         </div>
                     </div>
+
+                    <!-- <figure class="vision_bottom">
+                            <img src="./img/footer_bg.jpg" alt="">
+                        </figure> -->
+                    <!-- </div> -->
             </section>
             <!-- vision_unit } -->
 
 
             <!-- { mainService -->
             <section class="mainService">
-                <h3>고객을 위한 최고의 서비스를 제공합니다.</h3>
-                <ul>
-                    <li><a href="#!">고객의 소리</a></li>
-                    <li><a href="#!">자주묻는 질문</a></li>
-                    <li><a href="#!">홍보센터</a></li>
-                    <li><a href="#!">현장/사업소 안내</a></li>
-                    <li><a href="#!">인재채용</a></li>
-                    <li><a href="#!">오시는 길</a></li>
-                </ul>
+                <h2>고객을 위한 최고의 서비스를 제공합니다.</h2>
+                <div class="ser_inner">
+                    <ul>
+                        <li><a href="#!">고객의 소리</a></li>
+                        <li><a href="#!">자주묻는 질문</a></li>
+                        <li><a href="#!">홍보센터</a></li>
+                        <li><a href="#!">현장/사업소 안내</a></li>
+                        <li><a href="#!">인재채용</a></li>
+                        <li><a href="#!">오시는 길</a></li>
+                    </ul>
+                </div>
             </section>
             <!-- mainService } -->
 
@@ -220,18 +256,36 @@
 
         <!-- { footer -->
         <footer class="footer">
-            <div class="footer_top">
-                <ul>
-                    <li><a href="#!">개인정보처리방침</a></li>
-                    <li><a href="#!">법적고지</a></li>
-                    <li><a href="#!">이메일주소무단수집거부</a></li>
-                    <li><a href="#!">사이트맵</a></li>
-                    <li><a href="#!">고객센터</a></li>
-                    <li><a href="#!">사이버신문고</a></li>
-                </ul>
+            <div class="footer_content">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="#!">개인정보처리방침</a></li>
+                        <li><a href="#!">법적고지</a></li>
+                        <li><a href="#!">이메일주소무단수집거부</a></li>
+                        <li><a href="#!">사이트맵</a></li>
+                        <li><a href="#!">고객센터</a></li>
+                        <li><a href="#!">사이버신문고</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <figure class="footer_bg">
+                        <img src="./img/footer_logo.png" alt="">
+                    </figure>
+                    <address>
+                        <p>서울특별시 강남구 테헤란로 137 코레이트타워</p>
+                        <p>COPYRIGHT © 2018 DONGBU CORPORATION., ALL RIGHTS RESERVED.</p>
+                    </address>
+
+                </div>
             </div>
-            <address>서울특별시 강남구 테헤란로 137 코레이트타워<br />
-                COPYRIGHT © 2018 DONGBU CORPORATION., ALL RIGHTS RESERVED.</address>
+
+            <div id="top_btn" class="top_btn">
+                <a href="#mainVisual">
+                    <figure>
+                        <img src="./img/go_top.png" alt="">
+                    </figure>
+                </a>
+            </div>
         </footer>
 
         <!-- footer } -->

@@ -10,7 +10,7 @@
     font-size: inherit;
     font-weight: inherit;
     color: inherit;
-
+    scroll-behavior: smooth;
 }
 
 ul,
