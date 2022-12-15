@@ -1,0 +1,180 @@
+.animation_body {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(#bfebff 70%, #01000b 30%);
+
+}
+
+.wheel {
+    position: absolute;
+
+    border: 10px solid #333;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    font-size: 0;
+    animation: wheel 0.7s infinite linear;
+}
+
+.wheel:nth-last-child(1) {
+    left: -45px;
+    bottom: -45px;
+}
+
+.wheel:nth-last-child(2) {
+    right: -45px;
+    bottom: -45px;
+}
+
+@keyframes wheel {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.wheel::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    width: 100%;
+    height: 4px;
+    background: #555;
+}
+
+.wheel::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%)rotate(90deg);
+
+    width: 100%;
+    height: 4px;
+    background: #555;
+}
+
+.wheel .spoke::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%) rotate(-45deg);
+
+    width: 100%;
+    height: 4px;
+    background: #555;
+}
+
+.wheel .spoke::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%)rotate(45deg);
+
+    width: 100%;
+    height: 4px;
+    background: #555;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    border: 15px solid tomato;
+    background: #fff;
+}
+
+.cycle {
+    position: absolute;
+    right: -100px;
+    bottom: 30%;
+    animation: cycle 5s infinite linear;
+}
+
+@keyframes cycle {
+    to {
+        right: 100%;
+    }
+}
+
+.cloud {
+    position: absolute;
+    font-size: 100px;
+    color: #f5f5f5;
+    animation: cloud 20s infinite linear;
+}
+
+.cloud:nth-of-type(2) {
+    top: 50px;
+    left: 100px;
+    font-size: 200px;
+}
+
+.cloud:nth-of-type(3) {
+    top: 200px;
+    left: 200px;
+    font-size: 150px;
+}
+
+.cloud:nth-of-type(4) {
+    top: 100px;
+    left: 100px;
+    font-size: 70px;
+}
+
+@keyframes cloud {
+    from {
+        transform: translate(-500%, 0%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(1000%, 0%);
+        opacity: 1;
+    }
+}
+
+.jam_case {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+
+    animation: jam_case 0.5s infinite;
+
+}
+
+@keyframes jam_case {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.jam {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid none;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    overflow: hidden;
+    box-shadow: 0 0 50px 50px #faf7c2;
+
+
+}
+
+.jam figure {
+    transform: rotate(-45deg) scale(1.15);
+}

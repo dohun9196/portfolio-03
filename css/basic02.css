@@ -1,0 +1,89 @@
+.Wrap {
+    min-width: 1900px;
+}
+
+#header {}
+
+#header h1 {
+    text-align: center;
+}
+
+#header .gnb {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 메인메뉴를 만들때는 자식 선택자를 적극적으로 활용한다. */
+#header .gnb>ul {
+    display: flex;
+    gap: 60px;
+    line-height: 80px;
+    justify-content: center;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+
+}
+
+.mainVisual {
+    position: relative;
+    height: 500px;
+    background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainVisual .slogan h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0 0 20px 0;
+}
+
+.mainVisual .slogan p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: #333;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .inner figure {
+    flex: 1;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}

@@ -1,0 +1,76 @@
+.basic01 {
+    padding: 100px 0;
+
+}
+
+.basic01 h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+
+    /* box 안쪽의 구성요소(text, img: inline속성을 가진 요소)를
+    box의 가운데로 정렬한다. */
+    text-align: center;
+}
+
+.basic01 .title {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.basic01 .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+
+    /* size가 있는 box를 가운데로 정렬.
+    margin양쪽을 auto로 늘여준다 */
+    margin: 0 auto;
+}
+
+.basic01 .inner figure {
+    flex: 1;
+}
+
+.basic01 .inner figure img {
+    width: 100%;
+}
+
+.basic02 {
+    padding: 100px 0;
+    background: #f9f9f9;
+
+}
+
+.basic02 h2 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+
+    /* box 안쪽의 구성요소(text, img: inline속성을 가진 요소)를
+    box의 가운데로 정렬한다. */
+    text-align: center;
+}
+
+.basic02 .title {
+    font-size: 15px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.basic02 .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+
+    /* size가 있는 box를 가운데로 정렬.
+    margin양쪽을 auto로 늘여준다 */
+    margin: 0 auto;
+}
+
+.basic02 .inner figure {
+    flex: 1;
+}
+
+.basic02 .inner figure img {
+    width: 100%;
+}

@@ -1,0 +1,230 @@
+* {
+    outline: 1px solid --tomato;
+}
+
+.mc {
+    color: tomato;
+}
+
+
+
+#header {
+    line-height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header h1 {
+    font-size: 0;
+}
+
+
+#header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#header .gnb>ul a {
+    display: block;
+}
+
+
+
+
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mainContent h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin: 20px auto;
+}
+
+.mainContent>p {
+    font-size: 15px;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+
+.mainContent .inner {
+    display: flex;
+    gap: 2px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.mainContent .inner figure {
+    position: relative;
+    flex: 1;
+    height: 500px;
+    background: #333;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.mainContent .inner figure:hover {
+    flex: 3;
+}
+
+.mainContent .inner .itm01 {
+    background: url(../img/main_con01.jpg) no-repeat center center/cover;
+}
+
+.mainContent .inner .itm02 {
+    background: url(../img/main_con02.jpg) no-repeat center center/cover;
+}
+
+.mainContent .inner .itm03 {
+    background: url(../img/main_con03.jpg) no-repeat center center/cover;
+}
+
+.mainContent .inner .itm04 {
+    background: url(../img/main_con04.jpg) no-repeat center center/cover;
+}
+
+.mainContent .inner .case h3::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 15px auto 0 auto;
+}
+
+.mainContent .inner figure .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px 15px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+
+    transition: 0.5s;
+
+}
+
+.mainContent .inner figure:hover .over {
+    opacity: 1;
+}
+
+.mainContent .inner .over h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 30px 0;
+}
+
+.mainContent .inner .over p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    word-break: keep-all;
+}
+
+.mainContent .inner .over a {
+    border: 1px solid #fff;
+    padding: 10px 15px 8px 15px;
+    margin: auto 0 0 0;
+    align-self: flex-start;
+}
+
+.mainContent .top {
+    margin: 0 auto 50px auto;
+}
+
+.mainContent .bottom {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .bottom>div {
+    flex: 1;
+}
+
+/* flex 아이템 flex방향 padding은 size에 영향을 준다. */
+.mainContent .bottom .tit {
+    position: relative;
+    padding: 5px 0 0 0;
+}
+
+.mainContent .bottom .tit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 60px;
+    background: tomato;
+}
+
+.mainContent .bottom .tit h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 30px;
+}
+
+.mainContent .bottom .tit p {
+    font-size: 15px;
+    padding: 0 0 0 30px;
+}
+
+.mainContent .basic_list>li {
+    position: relative;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 0 0 20px;
+}
+
+.mainContent .basic_list>li::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background: #333;
+}
+
+
+
+
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}

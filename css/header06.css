@@ -1,0 +1,102 @@
+* {
+    outline: 1px solid tomato;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.Wrap {
+    min-width: 1900px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 100px;
+
+    line-height: 100px;
+    color: #fff;
+
+}
+
+#header h1 {
+    font-size: 0;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+.mainVisual {
+    position: relative;
+    height: 800px;
+    background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainVisual .slogan h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.mainVisual .slogan p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .inner figure {
+    flex: 1;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}

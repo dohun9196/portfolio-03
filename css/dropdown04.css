@@ -1,0 +1,146 @@
+body {
+    overflow-x: hidden;
+}
+
+.Wrap {
+    min-width: 1900px;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 200px;
+
+    line-height: 100px;
+    background: #fff;
+}
+
+#header h1 {
+    font-size: 0;
+}
+
+#header .gnb>ul {
+    display: flex;
+}
+
+#header .gnb>ul>li>a {
+    padding: 0 20px;
+}
+
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li a {
+    display: block;
+    text-align: center;
+}
+
+#header .gnb>ul>li .submenu {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    line-height: 35px;
+
+    transform: translate(-50%, 0);
+
+    width: 130px;
+    padding: 20px 0;
+
+    display: none;
+
+}
+
+
+
+#header:hover .gnb>ul>li .submenu {
+    display: block;
+}
+
+#header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+#header:hover .gnb::before {
+    height: 220px;
+}
+
+
+
+
+
+
+
+.mainVisual {
+    position: relative;
+    height: 500px;
+    background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainVisual .slogan h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.mainVisual .slogan p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .inner figure {
+    flex: 1;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
