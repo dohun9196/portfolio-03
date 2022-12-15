@@ -147,16 +147,18 @@
 }
 
 .mainVisual .main_slide figure {
-    position: relative;
+    position: absolute;
     height: 100vh;
     z-index: 1;
 
 }
 
+
 .mainVisual .main_slide .slide01 {
     background: url(../img/main_visual01.jpg) no-repeat center center/cover;
 
 }
+
 
 
 .mainVisual .main_slide .slide02 {
@@ -282,6 +284,7 @@
     transform: translate(0, -50%);
     padding: 75px 60px 75px 50px;
     border: 21px solid #909090;
+    transition: 1s;
 }
 
 .mainCorporation .cor_inner .corTxt:hover {
@@ -320,6 +323,7 @@
     text-align: center;
     border: 3px solid #909090;
     padding: 10px 20px;
+    transition: 1s;
 }
 
 .mainCorporation .cor_inner .corTxt:hover span {
@@ -372,6 +376,7 @@
     transform: translate(0, -50%);
     padding: 65px 50px 65px 60px;
     border: 21px solid #909090;
+    transition: 1s;
 }
 
 .mainCorporation .bus_inner .corTxt:hover {
@@ -410,6 +415,7 @@
     text-align: center;
     border: 3px solid #909090;
     padding: 10px 20px;
+    transition: 1s;
 }
 
 
