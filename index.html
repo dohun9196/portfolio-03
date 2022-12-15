@@ -5,82 +5,238 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기본레이아웃 css</title>
-    <style>
-        * {
-            text-decoration: none;
-        }
-    </style>
+    <title>동부건설</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-    <h1>basic layout</h1>
-    <hr />
+    <div class="Wrap">
+        <!-- { header -->
+        <header class="header">
+            <div class="inner">
+                <h1>
+                    <a href="/">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">회사소개</a></li>
+                        <li><a href="#!">사업소개</a></li>
+                        <li><a href="#!">투자정보</a></li>
+                        <li><a href="#!">지속가능경영</a></li>
+                        <li><a href="#!">홍보센터</a></li>
+                        <li><a href="#!">인재채용</a></li>
+                    </ul>
+                </nav>
+                <div class="site_link">
+                    <a href="#!">센트레빌</a>
+                    <a href="#!">동부건설채용</a>
+                </div>
+            </div>
+        </header>
+        <!-- header } -->
 
-    <h2>css basic layout</h2>
-    <hr />
+        <!-- { main -->
+        <main>
+            <!-- { mainVisual -->
+            <section class="mainVisual">
 
-    <ol>
-        <li><a href="./doc/basic00.html" target="_blank">기본레이아웃 01 - reset적용</a></li>
-        <li><a href="./doc/basic01.html" target="_blank">기본레이아웃 01 - section 3단 분리 레이아웃</a></li>
-        <li><a href="./doc/basic02.html" target="_blank">기본레이아웃 02 - 기본 메인 페이지 레이아웃</a></li>
-    </ol>
-    <hr />
+                <div class="main_slide">
+                    <figure class="slide01">
+                        <div class="inner">
+                            <h2>대한민국을 아름답게 하는 힘</h2>
+                            <p>동부건설은 고객을 위한 최고의 서비스와 기술력으로<br>
+                                최고의 가치를 창조해가겠습니다.</p>
+                        </div>
+                        <div class="con">
+                            <i class="xi-maker">삼척 LNG생산기지 방파제</i>
+                        </div>
+                    </figure>
 
-    <h2>css layout header</h2>
-    <hr />
-    <ol>
-        <li><a href="./doc/header01.html" target="_blank">Header레이아웃 01 - width1200</a></li>
-        <li><a href="./doc/header02.html" target="_blank">Header레이아웃 02 - foll</a></li>
-        <li><a href="./doc/header03.html" target="_blank">Header레이아웃 03 - foll2</a></li>
-        <li><a href="./doc/header04.html" target="_blank">Header레이아웃 04 - margin 배치</a></li>
-        <li><a href="./doc/header05.html" target="_blank">Header레이아웃 05 - gap 1200w</a></li>
-        <li><a href="./doc/header06.html" target="_blank">Header레이아웃 06 - w fixed</a></li>
-        <li><a href="./doc/header07.html" target="_blank">Header레이아웃 07 - w sticky</a></li>
-    </ol>
-    <hr />
+                    <figure class="slide02">
+                        <div class="inner">
+                            <h2>대한민국을 아름답게 하는 힘</h2>
+                            <p>동부건설은 고객을 위한 최고의 서비스와 기술력으로<br>
+                                최고의 가치를 창조해가겠습니다.</p>
+                        </div>
+                        <div class="con">
+                            <i class="xi-maker">국립중앙박물관</i>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <!-- mainVisual } -->
 
-    <h2>css layout multi-column menu</h2>
-    <hr />
-    <ol>
-        <li><a href="./doc/dropdown01.html" target="_blank">multi-column menu 01 - 1개씩</a></li>
-        <li><a href="./doc/dropdown02.html" target="_blank">multi-column menu 02 - 1개씩 말풍선</a></li>
-        <li><a href="./doc/dropdown03.html" target="_blank">multi-column menu 03 - 1개씩 애니메이션</a></li>
-        <li><a href="./doc/dropdown04.html" target="_blank">multi-column menu 04 - sub모두</a></li>
-        <li><a href="./doc/dropdown05.html" target="_blank">multi-column menu 05 - sub모두 애니메이션</a></li>
-        <li><a href="./doc/dropdown06.html" target="_blank">multi-column menu 06 - sub 가로배열</a></li>
-        <li><a href="./doc/dropdown07.html" target="_blank">multi-column menu 07 - mega menu</a></li>
-    </ol>
-    <hr />
 
-    <h2>css layout mainVisual slogan</h2>
-    <hr />
-    <ol>
-        <li><a href="./doc/mainVisual01.html" target="_blank">mainVisual레이아웃01 - slogan left 1200</a></li>
-        <li><a href="./doc/mainVisual02.html" target="_blank">mainVisual레이아웃02 - slogan right 1200</a></li>
-        <li><a href="./doc/mainVisual03.html" target="_blank">mainVisual레이아웃03 - slogan center 1200</a></li>
-    </ol>
+            <!-- { mainCorporation -->
+            <section class="mainCorporation">
+                <div class="cor_title">
+                    <p>2025 - Sustainable
+                        TOP 10 BUILDER</p>
+                </div>
+                <div class="cor_inner_bg">
+                    <div class="cor_inner">
+                        <div class="corTxt">
+                            <h2>DONGBU Corporation</h2>
+                            <p>모두가 선망하는 <br />품격있는 회사, 동부건설</p>
+                            <a href="#!">
+                                <span>회사소개 바로가기<i class="xi-arrow-right"></i></span>
+                            </a>
+                        </div>
+                        <figure>
+                            <img src="./img/main_corporation.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="bus_inner_bg">
+                    <div class="bus_inner">
+                        <div class="corTxt">
+                            <h2>DONGBU Business Unit</h2>
+                            <p>그 이름만으로도 <br />대한민국의 자랑이 되는 건축물</p>
+                            <a href="#!">
+                                <span><i class="xi-arrow-left"></i>사업분야 바로가기</span>
+                            </a>
+                        </div>
+                        <figure>
+                            <img src="./img/main_business.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
 
-    <h2>css content</h2>
-    <hr />
-    <ol>
-        <li><a href="./doc/content01.html" target="_blank">content01 - 1200라인 맞추기</a></li>
-        <li><a href="./doc/content02.html" target="_blank">content02 - 그림 4개</a></li>
-        <li><a href="./doc/content03.html" target="_blank">content03 - 그림 6개 그리드로 맞추기</a></li>
-    </ol>
+            </section>
+            <!-- mainCorporation } -->
 
-    <h2>css hover</h2>
-    <hr />
-    <ol>
-        <li><a href="./doc/hover01.html" target="_blank">hover01 - 롯데건설 따라하기</a></li>
-    </ol>
 
-    <!-- https://daontheme.cafe24.com/theme_HTML_20/ -->
-    <h2>css detail</h2>
-    <hr />
-    <ol>
-        <li><a href="./doc/detail01.html" target="_blank">detail01 - 롯데건설 따라하기</a></li>
-    </ol>
+            <!-- { vision_unit -->
+            <section class="vision_unit">
+                <div class="vision">
+                    <figure class="vision_title">
+                        <div class="vtitle_inner">
+                            <h2>VISION 2025</h2>
+                            <p>경영의 모든 면에서 지속적으로 최고의 경쟁력을 갖춘 기업으로 도약할 동부건설의 비전입니다.</p>
+
+                        </div>
+                    </figure>
+
+
+                    <div class="vis_inner">
+                        <div class="visTxt">
+                            <h2>CORE VALUE</h2>
+                            <p>대한민국을 대표하는 지속가능 종합 건설기업</p>
+                        </div>
+                        <div class="vis_slide">
+                            <figure>
+                                <img src="./img/vision01.jpg" alt="">
+                                <h3>CREATIVE</h3>
+                                <p>새로운 도전을 두려워하지 않는정신과<br />
+                                    창의적인 사고로 글로벌건설리더로 도약하겠습니다.
+                                </p>
+                            </figure>
+                            <figure>
+                                <img src="./img/vision02.jpg" alt="">
+                                <h3>PASSIONE</h3>
+                                <p>불굴의 의지와 열정으로 미래를 개척해 가며<br />
+                                    공동의 가치를 창조하겠습니다.
+                                </p>
+                            </figure>
+                            <figure>
+                                <img src="./img/vision03.jpg" alt="">
+                                <h3>TRUST</h3>
+                                <p>서로 간의 신뢰를 이루며 고객과 사회에 좋은<br />
+                                    영향력을 끼치는 정직한 기업이 되겠습니다.
+                                </p>
+                            </figure>
+                        </div>
+
+
+                        <div class="unit_inner">
+                            <div class="unitTxt">
+                                <h2>BUSINESS UNITS</h2>
+                                <p>동부건설은 더 나은 미래를 건설합니다.</p>
+                            </div>
+                            <div class="unit_slide">
+                                <figure>
+                                    <img src="./img/unit01.jpg" alt="">
+                                    <h3>토목</h3>
+                                    <p> 동부건설 토목사업부는 최고의 기술과<br />
+                                        최고의 품질로 세계 속의 기술 신대륙을<br />
+                                        건설하고 있습니다.
+                                    </p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/unit02.jpg" alt="">
+                                    <h3>건축</h3>
+                                    <p>동부건설은 최고의 시공력과<br />
+                                        뛰어난 설계감각을 바탕으로 대한민국의<br />
+                                        스카이라인을 바꾸는 일등주자가 되었습니다.<br />
+                                    </p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/unit03.jpg" alt="">
+                                    <h3>주택</h3>
+                                    <p>동부건설은 첨단기술과 품질우선주의를<br />
+                                        바탕으로 시대를 대표하는 아름다운 주가공간<br />
+                                        창조를 위해 매진하고 있습니다.<br />
+                                    </p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/unit04.jpg" alt="">
+                                    <h3>플랜트</h3>
+                                    <p>동부건설은 환경보전을 기본 이념으로<br />
+                                        대단위 산업시설 공사를 성공적으로 수행하고<br />
+                                        있습니다.<br />
+                                    </p>
+                                </figure>
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- vision_unit } -->
+
+
+            <!-- { mainService -->
+            <section class="mainService">
+                <h3>고객을 위한 최고의 서비스를 제공합니다.</h3>
+                <ul>
+                    <li><a href="#!">고객의 소리</a></li>
+                    <li><a href="#!">자주묻는 질문</a></li>
+                    <li><a href="#!">홍보센터</a></li>
+                    <li><a href="#!">현장/사업소 안내</a></li>
+                    <li><a href="#!">인재채용</a></li>
+                    <li><a href="#!">오시는 길</a></li>
+                </ul>
+            </section>
+            <!-- mainService } -->
+
+        </main>
+        <!-- main } -->
+
+        <!-- { footer -->
+        <footer class="footer">
+            <div class="footer_top">
+                <ul>
+                    <li><a href="#!">개인정보처리방침</a></li>
+                    <li><a href="#!">법적고지</a></li>
+                    <li><a href="#!">이메일주소무단수집거부</a></li>
+                    <li><a href="#!">사이트맵</a></li>
+                    <li><a href="#!">고객센터</a></li>
+                    <li><a href="#!">사이버신문고</a></li>
+                </ul>
+            </div>
+            <address>서울특별시 강남구 테헤란로 137 코레이트타워<br />
+                COPYRIGHT © 2018 DONGBU CORPORATION., ALL RIGHTS RESERVED.</address>
+        </footer>
+
+        <!-- footer } -->
+    </div>
+
 </body>
 
 </html>
