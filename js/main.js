@@ -22,7 +22,7 @@ $(function () {
     $('.top_btn a').click(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1000);
+        }, 500);
         return false;
     });
     $("#top_btn").scrollTop(0);
