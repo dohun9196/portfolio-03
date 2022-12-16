@@ -2,11 +2,11 @@ $(function () {
 
     $('.main_slide').slick({
         dots: true,
-        autoplay: false,
+        autoplay: true,
         arrows: true,
 
-        autoplaySpeed: 2000,
-        pauseOnHover: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false,
         pauseOnFocus: false,
         prevArrow: false,
         nextArrow: false,
@@ -22,13 +22,14 @@ $(function () {
     $('.top_btn a').click(function () {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
+        }, 1000);
         return false;
     });
+    $("#top_btn").scrollTop(0);
 
     $(window).scroll(function () {
 
-        if ($(this).scrollTop() < 3700) {
+        if ($(this).scrollTop() < 3600) {
             $("#top_btn").css('visibility', 'hidden');
         }
         else {

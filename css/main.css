@@ -10,7 +10,7 @@
 
 .header {
     position: fixed;
-    background: #fff;
+    background: #fdfdfd;
     /* overflow: hidden; */
     border-bottom: 1px solid #ddd;
     z-index: 999;
@@ -71,16 +71,14 @@
     width: max-content;
     transition: 0.5s;
 
+
 }
 
 .header:hover .drop_menu {
     display: block;
-    position: absolute;
     top: 60px;
     left: 0%;
     right: 0%;
-    width: max-content;
-    /* margin: 0 auto; */
     height: 170px;
     transition: 0.5s;
 }
@@ -110,7 +108,7 @@
     left: 0;
     right: 0;
     height: 0;
-    background: #fff;
+    background: #eee;
     border-top: 1px solid #ddd;
     transition: 0.5s;
 }
@@ -121,11 +119,10 @@
 
 
 
-
 .header .site_link {
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 0%;
     transform: translate(0, -50%);
 }
 
@@ -146,6 +143,7 @@
     position: relative;
 }
 
+
 .mainVisual .main_slide figure {
     position: absolute;
     height: 100vh;
@@ -153,35 +151,31 @@
 
 }
 
-
 .mainVisual .main_slide .slide01 {
     background: url(../img/main_visual01.jpg) no-repeat center center/cover;
-
 }
 
 
 
 .mainVisual .main_slide .slide02 {
     background: url(../img/main_visual02.jpg) no-repeat center center/cover;
-
 }
-
 
 
 .mainVisual .main_slide .slick-dots {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, 90%);
+    transform: translate(-50%, 85%);
 }
 
 
 .mainVisual .main_slide .slick-dots>li {
     position: relative;
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
     border: 1px solid #fff;
     border-radius: 50%;
 }
@@ -202,6 +196,11 @@
     margin: auto;
 }
 
+.mainVisual .main_slide .slick-active .inner h2,
+.mainVisual .main_slide .slick-active .inner p {
+    visibility: visible;
+    transition: 3.5s
+}
 
 
 .mainVisual .main_slide .slick-dots>li button {
@@ -214,6 +213,7 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* visibility: hidden; */
 }
 
 .mainVisual .inner h2 {
@@ -222,6 +222,7 @@
     margin: 0 0 30px 0;
     color: #fff;
     text-align: center;
+    visibility: hidden;
 
 }
 
@@ -230,19 +231,44 @@
     font-size: 20px;
     line-height: 25px;
     text-align: center;
+    visibility: hidden;
 
 }
 
+/* .mainVisual .main_slide .slick-dots li.slick-active .main_slide.inner {
+    visibility: visible;
+    transition: 1s;
+} */
+
 .mainVisual .con {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     right: 25%;
-    transform: translate(0%, 0%);
+    transform: translate(0%, 85%);
+
 }
 
 .mainVisual .con .xi-maker {
     color: #fff;
 }
+
+.mainVisual .sc_down {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainVisual .sc_down figure {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .sc_down figure .xi-angle-down-thin {
+    font-size: 50px;
+    color: #fff;
+}
+
 
 .mainCorporation {
     padding: 100px 0;
@@ -282,14 +308,14 @@
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
-    padding: 75px 60px 75px 50px;
+    padding: 75px 60px 75px 60px;
     border: 21px solid #909090;
     transition: 1s;
 }
 
 .mainCorporation .cor_inner .corTxt:hover {
     border: 21px solid #33b9a5;
-    padding: 75px 60px 75px 50px;
+    padding: 75px 60px 75px 60px;
     transition: 1s;
 }
 
@@ -319,7 +345,7 @@
 }
 
 .mainCorporation .cor_inner .corTxt span {
-    float: right;
+    float: left;
     text-align: center;
     border: 3px solid #909090;
     padding: 10px 20px;
@@ -327,8 +353,6 @@
 }
 
 .mainCorporation .cor_inner .corTxt:hover span {
-    float: right;
-    text-align: center;
     border: 3px solid #33b9a5;
     padding: 10px 20px;
     transition: 1s;
@@ -358,7 +382,7 @@
 .mainCorporation .bus_inner_bg {
     background: url(../img/main_bg.png) left 210px no-repeat;
     background-size: 40%;
-    padding: 50px 0 0 0;
+    padding: 100px 0 0 0;
 }
 
 .mainCorporation .bus_inner {
@@ -374,14 +398,15 @@
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
-    padding: 65px 50px 65px 60px;
+    padding: 65px 60px 65px 60px;
     border: 21px solid #909090;
     transition: 1s;
+    text-align: right;
 }
 
 .mainCorporation .bus_inner .corTxt:hover {
     border: 21px solid #ef4629;
-    padding: 65px 50px 65px 60px;
+    padding: 65px 60px 65px 60px;
     transition: 1s;
 }
 
@@ -411,7 +436,7 @@
 }
 
 .mainCorporation .bus_inner .corTxt span {
-    float: left;
+    float: right;
     text-align: center;
     border: 3px solid #909090;
     padding: 10px 20px;
@@ -420,8 +445,7 @@
 
 
 .mainCorporation .bus_inner .corTxt:hover span {
-    float: left;
-    text-align: center;
+
     border: 3px solid #ef4629;
     padding: 10px 20px;
     transition: 1s;
@@ -449,7 +473,7 @@
 
 .vision_unit {
     padding: 100px 0;
-    background: #f9f9f9;
+    background: #fafafa;
 
 }
 
@@ -483,14 +507,15 @@
     gap: 30px;
     width: 1200px;
     margin: 0 auto;
+    padding: 0 0 100px 0;
 }
 
 .vis_inner .vis_slide h3 {
     color: #333;
     font-size: 25px;
     font-weight: 500;
-    margin: 15px 0;
-    line-height: 50px;
+    margin: 0 0 20px 0;
+    line-height: 45px;
     text-align: center;
 }
 
@@ -518,14 +543,12 @@
     transition: 0.7s;
 }
 
-.vis_inner .vis_slide figure:hover {
+/* .vis_inner .vis_slide figure:hover {
     box-shadow: 1px 1px 10px 3px #333;
     transition: 0.7s;
-}
+} */
 
-.unit_inner {
-    padding: 50px 0 0 0;
-}
+.unit_inner {}
 
 .vis_inner .unitTxt h2 {
     color: #333;
@@ -556,8 +579,8 @@
     color: #333;
     font-size: 25px;
     font-weight: 500;
-    padding: 15px 0;
-    line-height: 50px;
+    margin: 0 0 20px 0;
+    line-height: 45px;
     text-align: center;
 }
 
@@ -588,7 +611,7 @@
 
 .vis_inner .unit_slide figure:hover {
     background: #f9f9f9;
-    box-shadow: 1px 1px 10px 3px #333;
+    box-shadow: 0px 0px 10px 1px #444;
     transition: 0.7s;
 }
 
@@ -609,7 +632,7 @@
     color: #333;
     font-size: 30px;
     font-weight: 500;
-    padding: 0 0 30px 0;
+
     line-height: 50px;
     text-align: center;
 
@@ -641,7 +664,7 @@
 .mainService .ser_inner ul li {
     position: relative;
     flex: 1;
-    -outline: 1px solid #f00;
+
 }
 
 .mainService .ser_inner ul li a {
@@ -768,16 +791,18 @@
     position: absolute;
     top: 85px;
     left: 150px;
-    /* transform: translate(0, -20%); */
-    /* margin: 0 0 15px 0; */
-}
 
-.footer_content address>p {
     color: #fff;
     font-size: 15px;
     line-height: 25px;
     font-weight: 100;
     font-style: normal;
+}
+
+.footer_content address p {
+
+    font-size: 12px;
+
 }
 
 .footer .top_btn {
