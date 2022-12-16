@@ -766,9 +766,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: -15px;
-    height: 15px;
+    height: 10px;
     border-right: 1px solid #999;
     margin: 0 auto;
 
